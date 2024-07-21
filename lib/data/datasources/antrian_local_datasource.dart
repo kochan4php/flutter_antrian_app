@@ -45,7 +45,7 @@ class AntrianLocalDatasource {
     final db = await instance.database;
     await db.insert(tableAntrian, antrian.toMap());
   }
-
+    
   //get all antrian
   Future<List<Antrian>> getAllAntrian() async {
     final db = await instance.database;
